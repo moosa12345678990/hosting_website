@@ -1,10 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import { Outfit } from 'next/font/google';
-import youtube from '@/public/storemessage/youtube.png';
-import twitter from '@/public/storemessage/twiiter.png';
-import facebook from '@/public/storemessage/facebook.png';
-import linkedin from '@/public/storemessage/linkedin.png';
 import Image from 'next/image';
 import { FaTwitter, FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 const outfit = Outfit({
@@ -15,7 +11,7 @@ const outfit = Outfit({
 
 const HeaderMessage = () => {
   return (
-    <div className="bg-[#43ABEA] text-white flex justify-between items-center p-2 text-sm h-[48px] w-full font-outfit">
+    <div className="bg-[#43ABEA] p-8 hidden   text-white md:flex justify-between items-center p-2 text-sm h-[48px] w-full font-outfit">
       {/* Left message */}
       <div>
         <h4 className={outfit.className + " text-[16px]"}>
